@@ -1,0 +1,799 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-animation: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+   
+   
+}
+
+/*navegación*/
+
+.navegación{
+    width: 100% ;
+    margin: auto;
+    background: #000000; 
+    
+}
+.navegación ul{
+    list-style: none;
+    display: inline-flex;
+    
+
+}
+.menú > li{
+    position: relative;
+    display: inline-block;
+}
+.menú > li > a{
+    display: block;
+    padding: 15px 15px;
+    color: rgb(190, 161, 118);
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.menú li a:hover{
+    background-color: rgba(92, 68, 32, 0.678);
+    transition:  all, 1s;
+    color: rgb(190, 161, 118);
+}
+
+/*submenú*/
+
+.submenú{
+    position:absolute;
+    background-color: rgba(51, 32, 11, 0.329);
+    width: 180%;
+    visibility: hidden;
+    opacity: 0;
+}
+.submenú li a{
+    display: block;
+    padding: 14px;
+    color: rgb(143, 120, 86);
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+
+}
+.menú li:hover .submenú{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: cubic-bezier(1, 0, 0, 1), 1.5s;
+
+}
+
+
+
+
+/*submenú2*/
+
+.submenú2{
+    position:absolute;
+    background-color: rgba(51, 32, 11, 0.329);
+    width: 180%;
+    margin: 0 180%;
+    visibility: hidden;
+    opacity: 0;
+}
+.submenú2 li a{
+    display: block;
+    padding: 14px;
+    color: rgb(146, 121, 84);
+    font-family: open 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+
+}
+.menú li:hover .submenú2{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: cubic-bezier(1, 0, 0, 1), 1.5s;
+
+}
+
+
+
+
+/*INTRODUCCCIÓN*/
+
+
+
+
+
+.cderechoint{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0% auto;
+    width:1000px;
+    border-radius: 8px;
+    border: 0px solid rgb(0, 0, 0);
+    padding: inherit;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.cDefiniciónint{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:  0px;
+    max-height: 600px;
+    max-width: 500px;
+    border-radius: 8px;
+    border: 0px solid rgb(134, 108, 68);
+    background-color: rgba(116, 116, 116, 0.59);       
+    padding: 10px;
+    
+
+}
+
+
+/*lista de temas*/
+
+.temaslis{
+    text-decoration: none;
+    background-color: aliceblue;
+
+}
+
+.temaslis li a{
+    text-decoration: none;
+    
+}
+
+
+/*presentación*/
+
+
+.space{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 100%;
+    max-width: 1600px;
+    position:static;
+    margin:  auto;
+    margin-top: 0;
+    background-image: url(https://images5.alphacoders.com/659/659780.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+
+
+
+.presentación{ 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        height: 170px;
+        width:450px;
+        border-radius: 8px;
+        border: 2px solid rgb(168, 133, 80);
+        background-color: rgba(0, 0, 0, 0.664);       
+    }
+
+.título{
+    font-weight: 50;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size: 42px;
+    color: rgb(163, 139, 86);
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.minombre{
+    font-weight: 50;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    color: rgb(236, 216, 150);
+    text-align: center;
+    margin: auto;
+
+}
+
+
+
+
+/*SECCIONES */
+
+
+.gratitud{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    max-width: 1600px;
+    position:relative;
+    margin:  auto;
+    background-image: url(Imágenes/The\ beatles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.apego{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    max-width: 1600px;
+    position:relative;
+    margin:  auto;
+    background-image: url(Imágenes/The\ Police\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.paciencia{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    max-width: 1600px;
+    position:relative;
+    margin: auto;
+    background-image: url(Imágenes/The\ verve.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+
+}
+
+.vida{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    max-width: 1600px;
+    position:relative;
+    margin:  auto;
+    background-image: url(https://fantoche.ch/sites/default/files/zp06_order_from_chaos_max_cooper_31411_c_1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+
+}
+
+
+.neuropsicología{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    max-width: 1600px;
+    position:relative;
+    margin: auto;
+    background-image: url(Imágenes/The\ DarkSoMoon.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+
+}
+
+
+
+.caracter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    max-width: 1600px;
+    position:relative;
+    margin:  auto;
+    background-image: url(https://www.imer.mx/interferencia/wp-content/uploads/sites/55/TameImpala-PG-4.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+
+}
+
+.concepción{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    max-width: 1600px;
+    position:relative;
+    margin: auto;
+    background-image: url(https://smoda.elpais.com/wp-content/uploads/2020/11/Bjork.jpg); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position:center;
+}
+
+
+.genoma{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    max-width: 1600px;
+    position:relative;
+    margin:  auto;
+    background-image: url(https://d7lju56vlbdri.cloudfront.net/var/ezwebin_site/storage/images/_aliases/img_1col/reportajes/el-editor-genetico-crispr-explicado-para-principiantes/6069637-31-esl-MX/El-editor-genetico-CRISPR-explicado-para-principiantes.jpg); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position:center;
+}
+
+
+.desarrolloen{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    max-width: 1600px;
+    position:relative;
+    margin:  auto;
+    background-image: url(); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position:center;
+}
+
+
+.seccióndetemas{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    max-width: 1600px;
+    position:relative;
+    margin:  auto;
+    background-color: #000000;
+background-image: linear-gradient(0deg, #000000 100%);
+
+}
+
+
+
+
+
+/*CONCEPTO*/
+
+
+.cConcepto{
+        padding: 0%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 5% auto;
+        height: 50px;
+        width:90%;
+        border-radius: 8px;
+        border: 0px solid rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.542);       
+    
+
+}
+
+/*SECCIÓN COMPLETA (SIN CONCEPTO)*/
+.descripción{
+        padding: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+        border: 0px solid rgb(0, 0, 0);
+               
+    
+
+}
+
+
+/*AUDIO*/
+
+.cAudio{ 
+        position: relative;
+        padding: 2%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 5% auto;
+        margin-bottom: 0;
+        height: 120px;
+        width:100%;
+        max-width: 350px;
+        border-radius: 8px;
+        border: 0px solid rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.535);       
+}
+
+.audio{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    height: 30px;
+    width: 250px;
+    
+    
+
+}
+
+/*VIDEO*/
+
+.video{
+    height: 300px;
+    margin: 5% auto;
+}
+
+.cvideo{
+ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+        position: relative;
+        padding: flex;
+        margin: 5% auto;
+        margin-bottom: 0;
+        height: 300px;
+        width: 100%;
+
+}
+
+
+/*CONTENEDORES*/
+
+.cizquierdo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2% auto;
+    height: 80%;
+    width:400px;
+    border-radius: 8px;
+    border: 0px solid rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);       
+    padding: inherit;
+
+
+}
+
+
+
+
+.cTDefinición{
+        padding: 0%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 5% auto;
+        height: 50px;
+        width: 300px;
+        border-radius: 8px;
+        border: 0px solid rgb(134, 108, 68);
+        background-color: rgba(0, 0, 0, 0.59); 
+
+}
+
+
+.cDefinición{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5% auto;
+    height: 500px;
+    width: 300px;
+    border-radius: 8px;
+    border: 0px solid rgb(134, 108, 68);
+    background-color: rgba(0, 0, 0, 0.59);       
+    padding: 30px;
+    overflow-y: scroll;
+
+}
+
+.cderecho{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2% auto;
+    height: 80%;
+    width:400px;
+    border-radius: 8px;
+    border: 0px solid rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);       
+    padding: inherit;
+
+}
+.cTLetra{
+        padding: 0%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 5% auto;
+        height: 50px;
+        width:300px;
+        border-radius: 8px;
+        border: 0px solid rgb(134, 108, 68);
+        background-color: rgba(0, 0, 0, 0.59);       
+}
+.cletra{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5% auto;
+    height: 500px;
+    width: 300px;
+    border-radius: 8px;
+    border: 0px solid rgb(134, 108, 68);
+    background-color: rgba(0, 0, 0, 0.604);       
+    padding: 29px;
+    overflow-y: scroll;
+
+}
+
+/*NAVEGACIÓN IZQUIERDA*/
+.cDefinición::-webkit-scrollbar{
+    width: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    
+}
+.cDefinición::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    width: 5px;
+
+}
+
+/*NAVEGACIÓN DERECHA*/          
+
+.cletra::-webkit-scrollbar{
+    width: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    
+}
+.cletra::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    width: 5px;
+
+}
+
+
+
+
+
+    
+
+
+
+
+
+
+/*formatos p*/
+.concepto{
+    font-weight: 50;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+    text-decoration-line:none;
+}
+.artista{
+    
+    font-weight: 50;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+}
+.canción{
+    font-weight: 50;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+}
+
+.letra{
+    font-variant:small-caps;
+    font-weight: 50;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+
+
+}
+
+.tLetra{
+    font-weight: 50;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+}
+
+.tdefinición{
+    font-weight: 50;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+
+}
+.definición{
+    font-variant:small-caps;
+    font-weight: 50;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    margin: auto;
+
+}
+
+
+.linkdes{
+    text-decoration: none;
+    color: #CFCFCF;
+}
+
+.descripciónletra
+    {
+        font-weight: 50;
+        font-family:Arial,Helvetica,sans-serif;
+        font-size: 15px;
+        color: rgb(236, 216, 150);
+        text-align: center;
+        margin: auto;
+    
+    }
+
+
+
+
+/*CARRUSEL*/
+
+
+
+
+.contenedor {
+	max-width: 1200px;
+	width: 100%;
+    margin: 200px auto ;
+	
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenido-principal {
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.contenido-principal__imagen {
+	vertical-align: top;
+	margin-right: 20px;
+	width: 50%;
+	max-width: 550px;
+}
+
+.contenido-principal__contenedor {
+	width: 50%;
+}
+
+.contenido-principal__titulo {
+	font-weight: normal;
+	font-size: 28px;
+}
+
+.contenido-principal__resumen {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+	color: #CFCFCF;
+}
+
+/*CAROUSEL */
+
+.carousel__contenedor {
+	position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente{
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px) ;
+	cursor: pointer;
+	line-height:  30px;
+	text-align: center;
+	background:none;
+	color: #CFCFCF;
+	opacity: 20%;
+
+}
+
+
+.carousel__anterior{
+	left: -30px;
+}
+
+.carousel__siguiente{
+	right: -30px;
+}
+
+
+
+.imgtemas{
+    height: 100px;
+    width: 175px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  MEDIA QUERIES  */
+@media screen and (max-width: 800px) {
+	body {
+		padding: 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}
+}
+
+
+
+
